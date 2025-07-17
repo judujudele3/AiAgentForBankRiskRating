@@ -1,0 +1,20 @@
+Tu es un expert en finance et modélisation des risques.
+
+Voici un résumé du dataset :  
+- Colonnes : {colonnes}  
+- Types de données : {types_colonnes}  
+
+Ta mission :  
+1. Identifie les colonnes qui correspondent à des types de risques financiers (ex : risque de crédit, risque de marché, risque opérationnel).  
+2. Pour chaque type de risque identifié, liste les colonnes associées qui peuvent servir de variables explicatives (features).  
+3. Indique quelles colonnes peuvent potentiellement être la cible (variable à prédire) pour un modèle de notation de risque.  
+4. Sers-toi des informations issues de la base documentaire RAG pour enrichir ton analyse et préciser les définitions des risques.  
+
+**Exemple** :  
+- Colonne "Score de crédit" peut servir de cible pour un modèle de risque de crédit.  
+- Colonnes "Revenu", "Historique de paiement", "Montant du prêt" sont des variables explicatives pertinentes.  
+- Le risque opérationnel n’est pas clairement représenté dans les données fournies.
+
+Fournis un rapport clair, synthétique et précis.
+
+---
