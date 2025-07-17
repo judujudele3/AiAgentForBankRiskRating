@@ -1,0 +1,33 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# Mac OS
+.DS_Store
+
+# Logs
+*.log
+
+# Environments and caches
+*.env
+*.venv
+*.mypy_cache/
+*.pytest_cache/
+.cache/
+
+# Sensitive files (si tu en as)
+*.key
+*.pem
+
+# Configs / secrets que tu ne veux pas partager
+config/*.secret.yaml
