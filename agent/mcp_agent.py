@@ -48,7 +48,8 @@ Question: {input}
         llm=llm,
         agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
         prompt=prompt,
-        verbose=True
+        verbose=True,
+        handle_parsing_errors=True
     )
 
     return agent
