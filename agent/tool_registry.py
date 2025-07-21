@@ -15,14 +15,14 @@ load_dataset_tool = Tool(
 detect_issues_tool = Tool(
     name="Detect Data Issues and Suggest Actions",
     func=detect_issues_and_suggest_actions,
-    description="Analyse un DataFrame pour détecter les problèmes comme valeurs manquantes, incohérences, colonnes redondantes, "
+    description="Analyse le dernier DataFrame charger par Load Dataset pour détecter les problèmes comme valeurs manquantes, incohérences, colonnes redondantes, "
                 "et propose des actions à effectuer pour préparer les données."
 )
 
 identify_risks_tool = Tool(
     name="Identify Risks and Target Columns",
     func=identify_risks_and_targets,
-    description="Analyse un DataFrame pour identifier les types de risques possibles, les colonnes associées à ces risques, "
+    description="Analyse le dernier DataFrame charger par Load Dataset pour identifier les types de risques possibles, les colonnes associées à ces risques, "
                 "et suggère quelles colonnes pourraient servir pour entraîner un modèle de prédiction."
 )
 

@@ -9,22 +9,20 @@ def main():
     print("\n================ Lancement de l'agent MCP ================\n")
 
     # Étape 1 : charger le dataset
-    dataset_path = "data/DatasetExampleCrédit.txt"
+    dataset_path = "C:\\Users\\amine\\OneDrive\\Documents\\Projects\\AIAgentForBankRiskRating\\AiAgentForBankRiskRating\\data\\DatasetExampleCredit.txt"
     print(f"[INFO] Dataset cible : {dataset_path}")
 
     query = (
-        f"Charge le fichier CSV situé à ce chemin : {dataset_path}. "
-        f"Ensuite, analyse les données pour détecter des problèmes éventuels, "
-        f"et propose des étapes de nettoyage ou préparation."
-        f"Puis identifie les risques présents dans les données, les colonnes associées, "
-        f"et celles qui peuvent servir comme cible pour un modèle de scoring de crédit."
+        f"Voila le chemin du fichier : {dataset_path}. "
     )
 
     # Appel à l’agent
-    result = agent.run(query)
+    result = agent.invoke({"input": query})
 
     print("\n================== Résultat de l'agent ==================\n")
     print(result)
 
 if __name__ == "__main__":
     main()
+
+
