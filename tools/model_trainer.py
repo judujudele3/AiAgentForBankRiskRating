@@ -10,7 +10,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 
 
 
-def train_model_tool(inputs: dict) -> dict:
+def train_model_tool(inputs: str) -> dict:
     try:
         X_train = get_data(inputs["X_train_id"])
         y_train = get_data(inputs["y_train_id"])

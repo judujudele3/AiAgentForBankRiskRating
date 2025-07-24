@@ -5,6 +5,21 @@ from tools.data_loader import load_dataset
 from tools.data_explorer import detect_issues_and_suggest_actions, identify_risks_and_targets
 from tools.model_trainer import train_model_tool, evaluate_model_tool
 from tools.model_suggester import suggest_models_tool
+from tools.rag_search import rag_search_tool
+from tools.rag_upsert import rag_upsert_tool
+
+
+rag_upsert = Tool(
+    name="RAG Upsert",
+    func=rag_upsert_tool,
+    description="Ajoute ou met à jour des documents dans la base FAISS à partir des fichiers fournis (PDF, TXT, ...).",
+)
+
+rag_search = Tool(
+    name="RAG Search",
+    func=rag_search_tool,
+    description="Permet de rechercher dans la base FAISS des documents pertinents en fonction de la question donnée.",
+)
 
 suggest_models = Tool(
     name="Suggest Suitable Models for Training",

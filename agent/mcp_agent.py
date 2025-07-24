@@ -9,7 +9,8 @@ def create_mcp_agent():
 
     prompt = PromptTemplate.from_template("""
 Tu es un agent intelligent pour l'analyse de données bancaires. Tu as accès à des outils pour charger, explorer et comprendre des données structurées.
-
+Tu peux aussi être amener à répondre à de simples questions.
+Dans tous les cas n'hésite pas à recourir aux outils RAG pour améliorer tes réponses.
 Utilise le format suivant :
 
 Question: la question à résoudre

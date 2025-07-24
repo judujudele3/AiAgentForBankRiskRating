@@ -8,7 +8,7 @@ from config.llm_config import get_llm
 
 def suggest_models_tool(target_id: str) -> dict:
     try:
-        
+
         target = get_data(target_id)
 
         if target is None:
