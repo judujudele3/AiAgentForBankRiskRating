@@ -4,7 +4,8 @@ from langchain_community.vectorstores import FAISS
 from config.embedding_config import get_embeddings
 
 # Chemin où sera stocké l'index FAISS localement
-FAISS_INDEX_PATH = "./data/faiss_index"
+FAISS_INDEX_PATH = "C:\\Users\\amine\\OneDrive\\Documents\\Projects\\AIAgentForBankRiskRating\\AiAgentForBankRiskRating\\data\\faiss_index"
+
 
 def get_faiss_index_path() -> str:
     """
@@ -22,7 +23,7 @@ def load_faiss_or_none() -> FAISS | None:
         return None
     embeddings = get_embeddings()
     try:
-        faiss_index = FAISS.load_local(path, embeddings)
+        faiss_index = FAISS.load_local(path, embeddings, allow_dangerous_deserialization=True)
         print(f"Index FAISS chargé depuis : {path}")
         return faiss_index
     except Exception as e:

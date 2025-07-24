@@ -69,6 +69,8 @@ def get_tools():
         train_model_tool_obj,
         evaluate_model_tool_obj,
         suggest_models,
+        rag_search,
+        rag_upsert,
         # ajouter d'autres tools ici
     ]
 

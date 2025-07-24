@@ -13,7 +13,7 @@ def main():
     print(f"[INFO] Dataset cible : {dataset_path}")
 
     query = (
-        f"Voila le chemin du fichier : {dataset_path}. Voici un fichier CSV avec des données de crédit. Charge-le, analyse les données qualitativement identifie une colonne cible, puis suggère des modèles de machine learning adaptés et entraîne un modèle sur ces données."
+        f"Voila le chemin du fichier : {dataset_path}. Voici un fichier CSV avec des données de crédit. Charge-le, RAG, analyse les données qualitativement, RAG, identifie une colonne cible, RAG, puis suggère des modèles de machine learning adaptés, RAG et entraîne un modèle sur ces données. Donc après chaque étape tu révise ta réponse avec le RAG"
     )
 
     # Appel à l’agent
